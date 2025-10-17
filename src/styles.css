@@ -1,0 +1,76 @@
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #0f172a; /* Equivalent to slate-900 */
+  color: #cbd5e1; /* Equivalent to slate-300 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative; /* Required for ScrollSpy if body is the scroll target */
+}
+.bg-dark-transparent {
+  background-color: rgba(33, 37, 41, 0.85); /* Dark background with transparency */
+  backdrop-filter: blur(10px);
+}
+.text-primary {
+  color: #38bdf8 !important; /* sky-400 */
+}
+.btn-primary {
+  background-color: #0ea5e9; /* sky-500 */
+  border-color: #0ea5e9; /* sky-500 */
+}
+.btn-primary:hover {
+  background-color: #0284c7; /* sky-600 */
+  border-color: #0284c7; /* sky-600 */
+}
+.btn-outline-primary {
+  color: #38bdf8; /* sky-400 */
+  border-color: #0ea5e9; /* sky-500 */
+}
+.btn-outline-primary:hover {
+  background-color: #0ea5e9; /* sky-500 */
+  color: white;
+}
+.border-primary {
+  border-color: #0ea5e9 !important; /* sky-500 */
+}
+.section-bg-dark {
+  background-color: #0f172a; /* slate-900 */
+}
+.section-bg-darker {
+  background-color: #1e293b; /* slate-800 */
+}
+.text-light-emphasis { /* For slightly brighter text on dark bg */
+  color: #f8fafc !important; /* slate-50 */
+}
+.text-muted-light { /* For slate-400 */
+  color: #94a3b8 !important;
+}
+.badge-custom {
+  background-color: #334155; /* slate-700 */
+  color: #7dd3fc; /* sky-300 */
+}
+.hero-gradient {
+  background: linear-gradient(to bottom right, #0f172a, #1e293b, #0c4a6e); /* from-slate-900 via-slate-800 to-sky-900 */
+}
+.skill-card-hover:hover {
+  transform: scale(1.1);
+  background-color: #334155; /* slate-600 */
+}
+.project-card-hover:hover {
+  transform: scale(1.05);
+}
+.social-icon-hover:hover {
+  color: #38bdf8 !important; /* sky-400 */
+  transform: scale(1.1);
+}
+.nav-link:hover, .navbar-brand:hover .brand-text-hover {
+  color: #7dd3fc !important; /* sky-300 for navbar hover */
+}
+.nav-link.active {
+  color: #38bdf8 !important;
+}
+section[id] { /* For all sections that are navigation targets */
+  scroll-margin-top: 80px; /* Adjusted to match data-bs-offset */
+}
