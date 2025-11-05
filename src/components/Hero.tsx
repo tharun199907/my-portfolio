@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { USER_NAME, USER_PROFESSION, USER_TAGLINE } from '../constants.jsx';
-
+import "./Hero.css";
 const Hero: React.FC = () => {
 
   const handleScrollToSection = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           <h1 className="display-3 fw-bold text-light-emphasis">
             Hi, I'm <span className="text-primary">{USER_NAME}</span>
           </h1>
-          <p className="mt-4 fs-4 text-light">
+          <p className="mt-4 fs-4 fw-bold text-animation">
             {USER_PROFESSION}
           </p>
           <p className="mt-3 fs-5 text-muted-light lead">

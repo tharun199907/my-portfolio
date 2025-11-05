@@ -1,0 +1,13 @@
+.text-animation{
+    animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+    from{
+        color: blue;
+    }
+    to{
+        color: red;
+    }
+    
+}

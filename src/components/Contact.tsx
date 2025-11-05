@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { USER_EMAIL, USER_LINKEDIN_URL, USER_GITHUB_URL, GithubSquareIcon, LinkedInSquareIcon, MailIcon } from '../constants';
-
+import "./Contact.css";
 const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-5 section-bg-dark">
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
             className="text-muted-light social-icon-hover"
             style={{transition: 'color 0.2s ease-in-out, transform 0.2s ease-in-out'}}
           >
-            <LinkedInSquareIcon /> {/* Default size from SVG const */}
+            <LinkedInSquareIcon className='linkdin-git-icons'/> 
           </a>
           <a
             href={USER_GITHUB_URL}
@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
             className="text-muted-light social-icon-hover"
             style={{transition: 'color 0.2s ease-in-out, transform 0.2s ease-in-out'}}
           >
-            <GithubSquareIcon /> {/* Default size from SVG const */}
+            <GithubSquareIcon className='linkdin-git-icons'/> 
           </a>
         </div>
       </div>

@@ -1,0 +1,25 @@
+.click-here-container{
+    background-image: linear-gradient( to right, #0c1c2dff, #0b3642ff);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    animation: moveRight 4s infinite;
+    
+}
+
+@keyframes moveRight {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(200px);
+            }
+
+        }
+.index-finger-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: hwb(270 98% 2%);
+}

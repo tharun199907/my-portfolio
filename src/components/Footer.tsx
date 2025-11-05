@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { USER_NAME } from '../constants';
-
+import { FaHandPointRight } from "react-icons/fa";
+import "./Footer.css";
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
@@ -17,24 +18,9 @@ const Footer: React.FC = () => {
       </div>
       <div className="align-items-center justify-content-center mt-4 w-50 ms-auto">
        {/* Arrow and Text Container */}
-        <div className="d-flex flex-column p-3 ms-5 me-5 px-4 rounded-4 text-white fw-bold shadow-lg"
-          style={{
-            background: "linear-gradient(135deg, #0c1c2dff, #0b3642ff)",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "12px",
-            fontSize: "1.1rem",
-            border: "2px solid rgba(255,255,255,0.3)",
-          }}>
-        <div>
-          <span className='text-warning fs-5'> You can chat with me here</span>
-        </div>
-        <div>
-          <small className="text-success">
-          (Click the chat icon to start)
-          </small>
-        </div>
-      </div> 
+        <div className="click-here-container d-flex flex-column p-3 ms-5 me-5 px-4 rounded-4 text-white fw-bold shadow-lg">
+          <span className='index-finger-container'>Click to chat <FaHandPointRight/></span>
+        </div> 
     </div>
     </footer>
   );

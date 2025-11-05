@@ -1,0 +1,15 @@
+.linkdin-git-icons{
+    width: 80px;
+    height:80px;
+    animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+			from {
+				color: blue;
+			}
+
+			to {
+				color: green;
+			}
+		}
